@@ -67,7 +67,16 @@
     {"key": "1080资源库2", "name": "1080资源库2", "type": 1, "api": "https://api.1080zyku.com/inc/apijson.php", "searchable": "1", "quickSearch": "1", "filterable": "0"},
     {"key": "push_agent", "name": "推送", "type": 3, "api": "csp_PushAgent", "searchable": 0, "quickSearch": 0, "filterable": 0 }
   ], 
-  "lives": [{"group": "redirect", "channels": [{"name": "channels", "urls": ["proxy://do=live&type=txt&ext=http://124.223.177.85:88/svip/直播挺快.txt"] } ] } ], 
+    "lives": [
+    {
+      "name": "IPv4",
+      "type": 0,
+      "url": "http://124.223.177.85:88/svip/直播挺快.txt",
+      "ua": "okhttp/3.12.13",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
   "parses": [
     {"name": "解析聚合", "type": 3, "url": "Demo"},
     {"name": "Json并发", "type": 2, "url": "Parallel"},
